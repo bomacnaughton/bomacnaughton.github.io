@@ -1,0 +1,169 @@
+html {
+    /* px means "pixels". The base font size is now 10 pixels high */
+    font-size: 15px;
+    /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(242, 242, 242);
+  }
+
+.name {
+    color: black;
+}
+
+.pfp {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about {
+    color: black;
+    margin: 3px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.links {
+    margin: 10px;
+    display: flex;
+    gap: 32px;          
+    justify-content: center; 
+    align-items: center;
+}
+
+.linkedin svg,
+.github svg,
+.resume svg,
+.email svg {
+    width: 40px;
+    height: 40px;
+    transition: fill 0.2s ease, stroke 0.2s ease, transform 0.2s ease;
+}
+
+.linkedin svg path,
+.resume svg path {
+    fill: #333;
+    stroke: none;
+}
+
+.github svg path,
+.email svg path,
+.email svg rect {
+    stroke: #333;
+    stroke-width: 2;   
+    fill: none;        
+}
+
+.linkedin:hover svg,
+.github:hover svg,
+.resume:hover svg,
+.email:hover svg {
+    transform: translateY(-2px);
+}
+
+.linkedin:hover svg path,
+.resume:hover svg path {
+    fill: lightskyblue;
+}
+
+.github:hover svg path,
+.email:hover svg path,
+.email:hover svg rect {
+    stroke: lightskyblue;
+}
+
+.pages {
+    margin: 10px;
+}
+
+.blog-page {
+    display: inline-block;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.blog-page:hover {
+    text-decoration: none;
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+.links-page {
+    display: inline-block;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.links-page:hover {
+    text-decoration: none;
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+.books-page {
+    display: inline-block;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.books-page:hover {
+    text-decoration: none;
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+.quotes-page {
+    display: inline-block;
+    background-color: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.quotes-page:hover {
+    text-decoration: none;
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
